@@ -12,3 +12,5 @@ colorscheme solarized
 
 "https://goo.gl/9dwKKj
 filetype plugin indent on
+
+autocmd FileType python setlocal tabstop=4 shiftwidth=4 softtabstop=4 expandtab

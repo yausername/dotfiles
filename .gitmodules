@@ -7,3 +7,6 @@
 [submodule ".vim/bundle/vim-colors-solarized"]
 	path = .vim/bundle/vim-colors-solarized
 	url = git://github.com/altercation/vim-colors-solarized.git
+[submodule ".vim/bundle/vim-pydocstring"]
+	path = .vim/bundle/vim-pydocstring
+	url = https://github.com/heavenshell/vim-pydocstring.git
