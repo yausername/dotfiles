@@ -1,7 +1,12 @@
 #!/usr/bin/env bash
 
 #get dotfiles directory
-DOTFILES_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+cd "$( dirname "${BASH_SOURCE[0]}" )"
+DOTFILES_DIR="$( pwd )"
+
+#fetch submodules
+git submodule init
+git submodule update
 
 #symlinks
 ln -siv "$DOTFILES_DIR/.bash_aliases" ~
