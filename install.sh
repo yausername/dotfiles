@@ -5,8 +5,7 @@ cd "$( dirname "${BASH_SOURCE[0]}" )"
 DOTFILES_DIR="$( pwd )"
 
 #fetch submodules
-git submodule init
-git submodule update
+git submodule update --init --recursive
 
 #symlinks
 ln -siv "$DOTFILES_DIR/.bash_aliases" ~
