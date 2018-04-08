@@ -19,3 +19,6 @@
 [submodule ".vim/bundle/syntastic"]
 	path = .vim/bundle/syntastic
 	url = git@github.com:vim-syntastic/syntastic.git
+[submodule ".vim/bundle/vim-jsdoc"]
+	path = .vim/bundle/vim-jsdoc
+	url = git@github.com:heavenshell/vim-jsdoc.git
