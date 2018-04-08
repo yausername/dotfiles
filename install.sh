@@ -7,6 +7,9 @@ DOTFILES_DIR="$( pwd )"
 #fetch submodules
 git submodule update --init --recursive
 
+python "$DOTFILES_DIR/.vim/bundle/YouCompleteMe/install.py"
+npm --prefix "$DOTFILES_DIR/.vim/bundle/tern_for_vim" install "$DOTFILES_DIR/.vim/bundle/tern_for_vim"
+
 #symlinks
 ln -siv "$DOTFILES_DIR/.bash_aliases" ~
 ln -siv "$DOTFILES_DIR/.bashrc" ~
