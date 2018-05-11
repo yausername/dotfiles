@@ -103,3 +103,9 @@ fi
 if [ -f /usr/share/autojump/autojump.sh ]; then
     . /usr/share/autojump/autojump.sh
 fi
+
+#add golang to path
+export PATH=$PATH:/usr/local/go/bin
+
+#map capslock to escape
+xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
