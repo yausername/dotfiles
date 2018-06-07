@@ -109,3 +109,11 @@ export PATH=$PATH:/usr/local/go/bin
 
 #map capslock to escape
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
+
+#vi mode
+set -o vi
+
+#use vim everywhere
+export VISUAL="vim"
+export EDITOR="$VISUAL"
+
