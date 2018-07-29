@@ -22,3 +22,9 @@
 [submodule ".vim/bundle/vim-jsdoc"]
 	path = .vim/bundle/vim-jsdoc
 	url = git@github.com:heavenshell/vim-jsdoc.git
+[submodule ".vim/bundle/surround"]
+	path = .vim/bundle/surround
+	url = https://tpope.io/vim/surround.git
+[submodule ".vim/bundle/nerdtree"]
+	path = .vim/bundle/nerdtree
+	url = git@github.com:scrooloose/nerdtree.git
