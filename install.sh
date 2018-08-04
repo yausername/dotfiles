@@ -17,3 +17,5 @@ ln -siv "$DOTFILES_DIR/.bash_profile" ~
 ln -siv "$DOTFILES_DIR/.vimrc" ~
 ln -siv "$DOTFILES_DIR/.vim" ~
 ln -siv "$DOTFILES_DIR/.tern-config" ~
+ln -siv "$DOTFILES_DIR/.fonts" ~
+ln -siv "$DOTFILES_DIR/.config/i3" ~/.config/
