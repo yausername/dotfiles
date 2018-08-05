@@ -19,3 +19,4 @@ ln -siv "$DOTFILES_DIR/.vim" ~
 ln -siv "$DOTFILES_DIR/.tern-config" ~
 ln -siv "$DOTFILES_DIR/.fonts" ~
 ln -siv "$DOTFILES_DIR/.config/i3" ~/.config/
+ln -siv "$DOTFILES_DIR/.config/i3status" ~/.config/
