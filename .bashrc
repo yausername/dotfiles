@@ -105,7 +105,7 @@ if [ -f /usr/share/autojump/autojump.sh ]; then
 fi
 
 #add golang to path
-export PATH=$PATH:/usr/local/go/bin
+export PATH=$PATH:/usr/local/go/bin:~/.local/bin
 
 #map capslock to escape
 xmodmap -e 'clear Lock' -e 'keycode 0x42 = Escape'
@@ -116,4 +116,12 @@ set -o vi
 #use vim everywhere
 export VISUAL="vim"
 export EDITOR="$VISUAL"
+
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/ritvik/.sdkman"
+[[ -s "/home/ritvik/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ritvik/.sdkman/bin/sdkman-init.sh"
+
+# added by travis gem
+[ -f /home/ritvik/.travis/travis.sh ] && source /home/ritvik/.travis/travis.sh
 
