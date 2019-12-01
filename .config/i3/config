@@ -186,7 +186,7 @@ assign [class="Chromium-browser"] $workspace5
 #open firefox on login
 exec firefox
 #open terminal on login
-exec i3-sensible-terminal
+exec i3-sensible-terminal -e "/bin/bash -c '/usr/bin/todo; exec /bin/bash -i'"
 
 #eclipse shit
 focus_follows_mouse no

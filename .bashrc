@@ -117,11 +117,12 @@ set -o vi
 export VISUAL="vim"
 export EDITOR="$VISUAL"
 
+export GPG_TTY=$(tty)
 
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
-export SDKMAN_DIR="/home/ritvik/.sdkman"
-[[ -s "/home/ritvik/.sdkman/bin/sdkman-init.sh" ]] && source "/home/ritvik/.sdkman/bin/sdkman-init.sh"
+export SDKMAN_DIR="$HOME/.sdkman"
+[[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # added by travis gem
-[ -f /home/ritvik/.travis/travis.sh ] && source /home/ritvik/.travis/travis.sh
+[ -f $HOME/.travis/travis.sh ] && source $HOME/.travis/travis.sh
 
